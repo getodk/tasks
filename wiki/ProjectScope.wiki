@@ -1,0 +1,28 @@
+#summary The 30,000 foot view of the project
+
+= Introduction =
+The initial implementation of this project will provide a simple way for a person in the filed to be informed of requested tasks from a supervisor.  The supervisor will be able to select from a list of available users, view their current tasks, current task status (done/not done) and assigned/due dates.  They can also set them up with new tasks.
+
+
+= Superviosr view =
+
+==User management==
+Users will register their phone with the system and either they or the supervisor can enter information such as the users name and their location.  Both fields are optional.  A user can also be marked as being available (are they on vacation?) or active (are they still working for the organization?)  Currently neither setting is anything other than informative but in the future they will be used for filtering users for other tasks.  Users may not be removed from the system since they will be associated with historical data.
+
+==Task management==
+Tasks will be listed for a single user at a time.  The supervisor has the ability to review pending tasks, including changing due dates, modifying the task, setting reminder dates and once the task is done archiving the task.  The assignment date and the done date are created automatically.
+
+==Archive review==
+This view will let the supervisor page through the set of archived tasks
+
+= Phone User View =
+This will be fleshed out as the first iteration is finished.
+
+==Registration==
+The user will register their phone with system.  They can optionally give a name and location.  This registration is how the system will know what tasks they should be notified of.
+
+==Task notification==
+The user will query the system for any assigned tasks and warnings of upcoming due dates.
+
+==Task completion==
+The user will be able add notes or to mark any of their tasks as done.

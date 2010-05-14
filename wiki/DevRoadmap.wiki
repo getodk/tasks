@@ -1,0 +1,37 @@
+#summary Tips for developers
+
+= An orientation for developers =
+
+This project is based on odk Manager and uses much of the code base.  It would be useful to review that project. <br/> http://code.google.com/p/open-data-kit/wiki/ODKManage.  <br/> The application lives in two pieces, one is the !AppEngine piece which supports the manager view and is a service for the the second piece, the Android based worker view.  The server portion currently lives on http://requestfollowupmanager.appspot.com but can also be deployed locally.
+
+
+= Dev general tips =
+
+ * Both pieces were developed in eclipse and the source tree includes the eclipse 3.5 configuration files.  Whether it can be directly imported into your installation is not guaranteed.
+ * Note that what is flagged as an error in Eclipse is a configuration setting.  What may show up as an error in one installation may be set as a warning or to ignore in another installation.  
+ * The !AppEngine SDK can be found at http://code.google.com/appengine/
+ * The Android SDK can be found at http://developer.android.com/sdk/index.html
+ * The Android target is 1.5
+ * If you use an Android Virtual Device and the server is also running on your local machine then the setting for the URL in odkTask settings should be http://10.0.2.2:8080
+ * Eclipse integrates many of the Android SDK tools into Eclipse and they are easier to use.
+
+= Server Notes =
+
+This code was written from scratch and has little legacy code from odk Manage.
+
+ * The servlets are in general divided into two parts
+  # doGet is for loading client pages or responding to a service request for information
+  # doPost is for receiving information from a client or through a service
+ * The user tasks in database are partitioned into two 'tables'
+  # The table of active tasks.  These are any non-archived tasks and it is assumed that there will be about 200 rows per manager.
+  # The table of archived tasks.  These are the tasks which have been archived and can grow without bounds.  However currently these tasks are read only and if a entity needs to be dropped to stay within limits this is the one which it safe to drop.
+ 
+= Android Notes =
+
+ The android code used odk Manage as a starting point.  There is some unused code which is still present but it will be incorporated as further development continues.
+ <br/> !OdkManageService is the central class in the application.  If you are wondering about the flow of control and how the different activities are generated this is a good place to start. 
+ * Synchronizing the tasks with the server
+  # The worker writable parts of modified tasks are sent to the server. i.e. The notes and the 'Done' flag
+  # All tasks for the worker which are not done are sent from the server.
+  # The current tasks in the DB are deleted
+  # The newly uploaded tasks are written to the DB. 

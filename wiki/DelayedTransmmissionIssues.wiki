@@ -1,0 +1,34 @@
+#summary Consequences of delayed transmission applications
+
+== What is delayed transmission ==
+Delayed transmission is simply the idea that a user makes entries into forms and sends them sometime later.  It's as if all day long you reply to e-mails but they are never sent until 5 pm every day.  Delayed transmission is often a natural effect of only having a periodic connection channel.
+
+== Types of tasks effected by delayed transmission ==
+Some tasks are not adversely affected by delayed transmission.  If the task is single sided, only one person generates the content, then the effects, beyond timeliness, are negligible.  If the task allows for interaction between two people then the results can be confusing.  The difficulty is not technical, it would be easy to sequence messages by a time stamp.  The difficulty is social, of when was knowledge available to each user.
+
+== Example ==
+
+In odkTask the person using the phone has to take a step to send their messages back to the server.  Image the following exchange:<br/>
+
+*Manager* -> Writes 'Deliver the medication to the clinic'<br/>
+*Worker* -> <font color='red'>Syncs phone</font><br/>
+*Worker* -> Writes 'OK, I'll deliver them to John'<br/>
+*Worker* -> <font color='red'>Syncs phone</font><br/>
+*Manager* -> Writes 'Give them to Mark'<br/>
+*Worker* -> Writes 'I gave them to John'<br/>
+
+The correct chronology for this is:<br/>
+
+*Manager* -> 'Deliver the medication to the clinic'<br/>
+*Worker* -> 'OK, I'll deliver them to John'<br/>
+*Manager* -> 'Give them to Mark'<br/>
+*Worker* -> 'I gave them to John'<br/>
+   
+However it gives the impression the worker ignored the directive not to give the medication to John.
+
+== Work around ==
+
+In odkTask we get around this issue by only letting the manager write tasks and the worker only write notes.  Even though the same sentences appear for the same task they are not appear sequentially and the ordering of the exchange is given the ambiguity it deserves. 
+
+|| Task || Notes ||
+||Deliver the medication to the clinic. Give them to Mark ||OK, I'll deliver them to John.  I gave them to John||

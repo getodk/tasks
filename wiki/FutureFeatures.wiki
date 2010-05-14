@@ -1,0 +1,29 @@
+#summary Feature wish list
+
+= Introduction =
+
+These are a list of possible features, as opposed to bugs which should go in issues
+
+
+= Wish List =
+
+==Linkage to forms==
+Add the ability for a user to click on a task which would launch a odk Collection form.
+
+== Support for more than one manager per server ==
+Currently anybody logged into the server can see all tasks.  The effect of this is that if more than one manager is using the service they would have to keep track of who their workers were and it would also be an obvious breach of patient confidentiality.  The general outline is that a manager can start a new management set and based on their login credentials they will be able to view their workers and tasks.  They would also be able to give other permission to act as managers.  There will also be a supper user who would have the ability to shutdown management sets but who would not be able to see the tasks.
+
+== Use transport layer other than TCP/IP ==
+The goodness of mobile devices is that they are able to communicate where other devices can not.  This will obviously be a major challenge.
+
+== Use GPS/maps for location rather than text ==
+Currently the location is set when the user registers the phone, which really only needs to be done once.  We should be able to take advantage of the built in GPS of the android to update the location more often and take advantage of Google maps to better show the managers where the workers are.
+
+== Localization ==
+Most of the application uses resources for strings so the application has been set up for localization, however there is no way to change the language, this needs to be added.
+
+== Use date widget ==
+Inputting dates is currently done using xx/xx/xxxx format, which can be either dd/mm/yyyy or mm/dd/yyyy.  This is confusing and error prone.  We should use a widget rather than direct entry.  N.B.  Many calendar widgets are not localizable.
+
+== On the Android move Settings and Register to the menu ==
+These are two seldom used buttons and currently they clutter up the UI 

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+  <TextView
+    android:gravity="center"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="1px"
+    android:paddingBottom="1px"
+    android:textSize="9pt"
+    android:textStyle="bold"
+    android:text="@string/main_header_message" />
+    
+   <ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"  
+    android:layout_height="fill_parent">  
+  
+    <LinearLayout
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:orientation="vertical" >
+      
+          <TextView
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:textSize="2pt" />
+          
+          <Button
+          android:id="@+id/view_tasks_button"
+          android:textSize="9pt"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content" 
+          android:padding="20px"
+          android:text="@string/main_view_tasks"/>
+        
+          
+
+          <!-- Button
+          android:id="@+id/synchronize_tasks"
+          android:textSize="9pt"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content" 
+          android:padding="20px"
+          android:text="@string/main_synchronize_tasks"/>
+        
+          <TextView
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:textSize="2pt" /-->
+          
+            <TextView android:layout_width="fill_parent" 
+                      android:layout_height="wrap_content" 
+                      android:textSize="2pt" />
+         <Button android:id="@+id/sync_button" 
+         		 android:text="@string/sync" 
+         		 android:textSize="10pt" 
+         		 android:layout_width="fill_parent" 
+         		 android:layout_height="wrap_content" 
+         		 android:padding="20px" />
+         		 
+         <TextView android:layout_width="fill_parent" 
+         		 android:layout_height="wrap_content" 
+         		 android:textSize="2pt" />
+         		 
+         <Button
+          		android:id="@+id/register_phone_button"
+          		android:text="@string/register_phone"
+          		android:textSize="10pt"
+          		android:layout_width="fill_parent"
+          		android:layout_height="wrap_content" 
+          		android:padding="20px"/>
+	      
+           <TextView
+          		android:layout_width="fill_parent"
+          		android:layout_height="wrap_content"
+          		android:textSize="2pt" />
+    
+    	  <Button
+          		android:id="@+id/settings_button"
+          		android:text="@string/settings"
+          		android:textSize="10pt"
+          		android:layout_width="fill_parent"
+          		android:layout_height="wrap_content" 
+          		android:padding="20px"/>
+          
+    	  <TextView
+          		android:id="@+id/status"
+          		android:layout_width="fill_parent"
+          		android:layout_height="wrap_content"
+          		android:padding="5px"/>
+          
+    </LinearLayout>
+        
+  </ScrollView>  
+</LinearLayout>

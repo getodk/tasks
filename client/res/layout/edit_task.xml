@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+  <TextView
+    android:gravity="center"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="1px"
+    android:paddingBottom="1px"
+    android:textSize="9pt"
+    android:textStyle="bold"
+    android:text="@string/edit_task_header_message" />
+    
+     <ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"  
+    android:layout_height="fill_parent">  
+  
+    <LinearLayout
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:orientation="vertical" >
+      
+		<TextView android:layout_width="wrap_content" 
+				  android:layout_height="wrap_content" 
+				  android:text="@string/task_edit_description"/>		  
+		<TextView android:id="@+id/EditDescription"
+				  android:layout_width="fill_parent" 
+				  android:layout_height="wrap_content" />
+      
+      	<TextView
+          		  android:layout_width="fill_parent"
+          		  android:layout_height="wrap_content"
+          		  android:textSize="2pt" /> 
+      
+		<TextView android:layout_width="wrap_content" 
+				  android:layout_height="wrap_content" 
+				  android:text="@string/task_edit_notes"/>		  
+		<EditText android:text="@+id/EditNotes" 
+				  android:id="@+id/EditNotes"
+				  android:layout_width="fill_parent" 
+				  android:layout_height="wrap_content" />
+	  
+     	<TextView
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:textSize="2pt" /> 
+          
+       <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+			  android:orientation="horizontal"
+			  android:layout_width="fill_parent"
+			  android:layout_height="wrap_content">
+			<TextView android:layout_width="wrap_content" 
+				  android:layout_height="wrap_content" 
+				  android:text="@string/alert_date"/>
+			<TextView android:id="@+id/AlertDate" 
+				  android:layout_width="wrap_content" 
+				  android:layout_height="wrap_content"/>	  		 
+	 	</LinearLayout>
+            
+       <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+			  android:orientation="horizontal"
+			  android:layout_width="fill_parent"
+			  android:layout_height="wrap_content">
+			<TextView android:layout_width="wrap_content" 
+				  android:layout_height="wrap_content" 
+				  android:text="@string/due_date"/>
+			<TextView android:id="@+id/DueDate" 
+				  android:layout_width="wrap_content" 
+				  android:layout_height="wrap_content"/>	  		 
+	 	</LinearLayout>
+      
+        <TextView
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:textSize="4pt" /> 
+
+		<CheckBox android:id="@+id/TaskDone" 
+				  android:layout_width="wrap_content" 
+				  android:layout_height="wrap_content" 
+				  android:text="@string/task_edit_completed" />
+          		                
+			 <Button
+          		android:id="@+id/task_done_button"
+          		android:text="@string/task_edit_done"
+          		android:textSize="10pt"
+          		android:layout_width="wrap_content"
+          		android:layout_height="wrap_content" 
+          		android:minWidth="200px" 
+          		android:padding="10px"/>
+          		
+          		<Button
+          		android:id="@+id/task_cancel_button"
+          		android:text="@string/task_edit_cancel"
+          		android:textSize="10pt"
+          		android:layout_width="wrap_content"
+          		android:layout_height="wrap_content" 
+          		android:minWidth="200px" 
+          		android:padding="10px"/>
+
+    
+</LinearLayout>
+    </ScrollView>
+</LinearLayout>  
+
+
+  

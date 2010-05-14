@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<!--
+		Copyright (C) 2009 Google Inc. Licensed under the Apache License,
+		Version 2.0 (the "License"); you may not use this file except in
+		compliance with the License. You may obtain a copy of the License at
+
+		http://www.apache.org/licenses/LICENSE-2.0 Unless required by
+		applicable law or agreed to in writing, software distributed under the
+		License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+		CONDITIONS OF ANY KIND, either express or implied. See the License for
+		the specific language governing permissions and limitations under the
+		License.
+	-->
+<resources>
+	<string name="app_name">TaskClient</string>
+	<string name="main_header_message">ODK Tasks</string>
+	<string name="main_view_tasks">View Tasks</string>
+	<string name="main_synchronize_tasks">Synchronize Tasks</string>
+	<string name="server_settings">Server Settings</string>
+	<string name="default_server">Default Server</string>
+	<string name="server">Server</string>
+	<string name="change_server">Change Server</string>
+	<string name="username">User Name</string>
+	<string name="change_user">Change User</string>
+	<string name="location">Location</string>
+	<string name="change_location">Change Location</string>
+	<string name="register_phone">Register Phone</string>
+	<string name="sync_tasks">Synchroize Tasks</string>
+
+
+	<string name="settings">Settings</string>
+	<string name="yes">Yes</string>
+	<string name="no">No</string>
+	<string name="ok">OK</string>
+	<string name="cancel">Cancel</string>
+	<string name="languages_error">Sorry, this form has no other languages!</string>
+	<string name="sdcard_error">Sorry, you have no SD card!</string>
+	<string name="url_error">Sorry, URL is invalid!</string>
+	<string name="load_error">Sorry, unable to load form %s</string>
+  	<string name="directory_error">Sorry, unable to create directory %s</string>  
+  	<string name="delete_confirm">Are you sure you want to delete %s</string>
+  	<string name="entryquit_confirm">Going back now will delete the entered data. Are you sure?</string>
+	<string name="quit_entry">Save and Exit</string>
+	<string name="change_language">Change Language</string>
+
+  	<string name="sync">Sync</string>
+  	<string name="server_sms_num">Server SMS Number: </string>
+  	<string name="server_url">Server URL: </string>
+  	<string name="user_id">User ID:</string>
+  	<string name="no_tasks">No current assigned tasks</string>
+  	<string name="due_date">Due date: </string>
+<string name="edit_task_header_message">Task</string>
+<string name="task_edit_description">Description:</string>
+<string name="task_edit_notes">Notes:</string>
+<string name="task_edit_done"> Save</string>
+<string name="task_edit_cancel">Cancel</string>
+<string name="task_edit_completed">Task Complete</string>
+<string name="alert_date">Alert Date:</string>
+</resources>
